@@ -20,8 +20,9 @@ To complete the challenge, send the Deploy object to the `feed_rabbit` function.
 
 ```bash
 sui client call \
-  --package <PACKAGE_ID> \
-  --module my_nft \
-  --function call_feed_rabbit \
-  --args <DISPLAY_OBJECT_ID>
+  --package 0xaa3e79b37f336fa23ce354ddaa82391a7903690e78e46f61a197537be0b318b3 \
+  --module display \
+  --function feed_rabbit \
+  --type-args <PACKAGE_ID>::my_nft::MyNFT \
+  --args <DISPLAY_OBJECT_ID> \
 ```
